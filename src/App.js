@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+import MapContainer from './MapContainer';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    }
+  }
+  render () {
+    const center = [-33.43778, -70.65028];
+    const zoom = 16;
+      return (
+        <MapContainer 
+        center={center}
+        zoom={zoom}
+        />
+            );
+       
+        }
+}  
 
 export default App;
