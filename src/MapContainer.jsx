@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import {Map, TileLayer, Marker} from 'react-leaflet'
 
 const hereCredentials = {
@@ -32,4 +32,4 @@ class MapContainer extends React.Component {
             }
     }  
     
-export default MapContainer;
+export default MapContainer;*/
